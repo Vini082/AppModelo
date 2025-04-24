@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mUsuario"
+            android:layout_below=""
+            android:layout_marginTop="400dp"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:hint="Qual o usuario?"
+                android:inputType="textPersonName"
+                android:padding="20sp"
+                android:gravity="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mUsuario"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10sp"
+                android:hint="Qual a senha?"
+                android:inputType="textPersonName"
+                android:padding="20sp"
+                android:gravity="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/mBotaoentrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:text="Entrar"
+            android:backgroundTint="@color/black"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
