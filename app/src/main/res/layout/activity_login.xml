@@ -11,6 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/esportes"
+
+            >
+
+        </ImageView>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
