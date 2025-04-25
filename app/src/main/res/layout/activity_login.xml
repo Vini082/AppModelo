@@ -7,26 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
+          android:layout_gravity="center"
             android:src="@drawable/esportes"
+            android:id="@+id/mImagemlogin"
+            />
 
-            >
 
-        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bora de esportes?"
+            android:layout_below="@+id/mImagemlogin"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/mUsuario"
-            android:layout_below=""
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="4dp"
             app:boxCornerRadiusBottomEnd="25sp"
             app:boxCornerRadiusBottomStart="25sp"
             app:boxCornerRadiusTopEnd="25sp"
@@ -67,12 +76,12 @@
             android:id="@+id/mBotaoentrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="550dp"
+            android:layout_marginTop="5dp"
             android:text="Entrar"
             android:backgroundTint="@color/black"
             />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
